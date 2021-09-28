@@ -1,5 +1,6 @@
 <?php
   include '../include/header_admin.php';
+  include '../include/sidebar_admin.php';
   include '../classes/product.php';
 ?>
 <?php
@@ -7,14 +8,19 @@
 if (!isset($_GET['sanpham_id']) || $_GET['sanpham_id'] ==NULL){
 echo "<script>window.location ='DSSP.php'</script>";
 }
+
 else
 {
     $id = $_GET['sanpham_id'];
 }
+
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit'])) {
     
     $updateProduct = $pro->update_pro($_POST,$_FILES, $id);
+    
 }
+
 ?>
       <!-- End Navbar -->
       <div class="content">
