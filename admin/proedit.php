@@ -52,7 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit'])) {
                           Tên
                         </th>
                         <th>
-                          Số lượng
+                          ID danh mục
                         </th>
                         <th>
                           Ảnh
@@ -70,7 +70,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit'])) {
                             <input type="text" value="<?php echo $result['sanpham_name']?>" name="sanpham_name">
                           </td>
                           <td>
-                          <input type="text" value="<?php echo $result['sanpham_soluong']?>" name="sanpham_soluong">
+                          <input type="text" value="<?php echo $result['category_id']?>" name="sanpham_soluong">
                           </td>
                           <td>
                           <img src="../uploads/<?php echo  $result['sanpham_image']; ?>" width="50">
