@@ -61,7 +61,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
                         <tr>
                           
                           <td>
-                          <input type="text" value="<?php echo $result['ten']?>" name="cusname">
+                          <input type="text" value="<?php echo $result['name']?>" name="cusname">
                           </td>
                           <td>
                           <input type="text" value="<?php echo $result['address']?>" name="cusaddress">
