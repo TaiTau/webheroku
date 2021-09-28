@@ -70,7 +70,7 @@ class khadd
             return $alert;
         }
         else{
-            $squery = "UPDATE tbl_khachhang SET ten = '$cusname' , address = '$cusaddress' , phone = '$cusnumber' , email= '$cusemail'  WHERE khachhang_id = '$id'";
+            $squery = "UPDATE tbl_khachhang SET name = '$cusname' , address = '$cusaddress' , phone = '$cusnumber' , email= '$cusemail'  WHERE khachhang_id = '$id'";
             $result = $this ->db->insert($squery);
             if($result){
                 $alert ="<span class ='thanhcong'>Sua thanh cong</span> ";
