@@ -50,7 +50,7 @@ class productadd
         }else{
             if(!empty($file_name)){
                 //Nếu người dùng chọn ảnh
-                if ($file_size > 204800) {
+                if ($file_size > 304800) {
 
                  $alert = "<span class='success'>Image Size should be less then 2MB!</span>";
                 return $alert;
