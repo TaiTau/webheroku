@@ -30,7 +30,7 @@ class order
 
         if(empty($ordedate)&&empty($productname)&&empty($orderquan))
         {
-            $alert = "<span class ='thanhcong'>Vui long dien ten don hang</span>";
+            $alert = "<span class ='thanhcong'>Vui long dien ten khach hang</span>";
             return $alert;
         }
         else{
@@ -53,6 +53,11 @@ class order
         $result = $this ->db->select($squery);
         return $result;
     }
+    public function get_amount($cus_id){
+        $query = "SELECT tongtien FROM tbl_donhang WHERE khachhang_id = '$cus_id'";
+        $get_price = $this->db->select($query);
+        return $get_price;
+    }
     public function update_cus($sanpham_id,$khachhang_id,$soluong,$ngaythang,$id)
     {
         $sanpham_id= $this ->fm->validation($sanpham_id);
@@ -68,7 +73,7 @@ class order
         $id = mysqli_real_escape_string($this->db->link,$id);
         if(empty($sanpham_id)&&empty($khachhang_id)&&empty($soluong)&&empty($ngaythang))
         {
-            $alert = "<span class ='thanhcong'>Vui long dien ten don hang</span>";
+            $alert = "<span class ='thanhcong'>Vui long dien ten khach hang</span>";
             return $alert;
         }
         else{
@@ -105,5 +110,4 @@ class order
         } 
     }
 }
-
 ?>
