@@ -24,10 +24,10 @@
         <meta name="author" content="">
         <title>Tạo mới đơn hàng</title>
         <!-- Bootstrap core CSS -->
-        <link href="assets/bootstrap.min.css" rel="stylesheet"/>
+        <link href="../assets/bootstrap.min.css" rel="stylesheet"/>
         <!-- Custom styles for this template -->
-        <link href="assets/jumbotron-narrow.css" rel="stylesheet">  
-        <script src="assets/jquery-1.11.3.min.js"></script>
+        <link href="../assets/jumbotron-narrow.css" rel="stylesheet">  
+        <script src="../assets/jquery-1.11.3.min.js"></script>
     </head>
     <body>
         <div class="container">
