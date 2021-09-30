@@ -24,14 +24,12 @@
         <meta name="author" content="">
         <title>Tạo mới đơn hàng</title>
         <!-- Bootstrap core CSS -->
-        <link href="../assets/bootstrap.min.css" rel="stylesheet"/>
+        <link href="assets/bootstrap.min.css" rel="stylesheet"/>
         <!-- Custom styles for this template -->
-        <link href="../assets/jumbotron-narrow.css" rel="stylesheet">  
-        <script src="../assets/jquery-1.11.3.min.js"></script>
+        <link href="assets/jumbotron-narrow.css" rel="stylesheet">  
+        <script src="assets/jquery-1.11.3.min.js"></script>
     </head>
-
     <body>
-
         <div class="container">
             <div class="header clearfix">
                 <h3 class="text-muted">VNPAY DEMO</h3>
@@ -50,7 +48,6 @@
                             <option value="other">Khác - Xem thêm tại VNPAY</option>
                         </select>
                     </div>
-                   
                     <div class="form-group">
                         <label for="order_id">Mã hóa đơn</label>
                         <input class="form-control" id="order_id" name="order_id" type="text" value="<?php echo date("YmdHis") ?>"/>
@@ -59,13 +56,11 @@
                         <label for="amount">Số tiền</label>
                         <?php
                     $getcusname = $order->get_amount($id);
-
                     if($getcusname){
                         $total=0;
                     while($result = $getcusname->fetch_assoc()){
                         $total += $result['tongtien'];
                   ?>
-                     
                      <?php
                     }}
                   ?>
@@ -113,9 +108,7 @@
                     
                     <button type="submit" class="btn btn-primary" id="btnPopup">Thanh toán Popup</button>
                     <button type="submit" class="btn btn-default">Thanh toán Redirect</button>
-                  
                 </form>
-               
             </div>
             <p>
                 &nbsp;
@@ -151,7 +144,5 @@
                 return false;
             });
         </script>
-
-
     </body>
 </html>
