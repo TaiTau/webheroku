@@ -5,7 +5,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-$vnp_TmnCode = "AIV351VW"; //Mã website tại VNPAY 
-$vnp_HashSecret = "NCCPPMMFRGTZVWRAQBUFUICRALDOCJGH"; //Chuỗi bí mật
-$vnp_Url = "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html";
-$vnp_Returnurl = "http://localhost:8080/vnpay_php/vnpay_return.php";
+$vnp_TmnCode = "Y4U88XFK"; //Mã website tại VNPAY 
+$vnp_HashSecret = "DTHXNFNBUMNKFKQOZVHTXUXNUQUUXMTV"; //Chuỗi bí mật
+$vnp_Url = "http://sandbox.vnpayment.vn/paymentv2/vpcpay.html";
+$vnp_Returnurl = "https://webnangcao.herokuapp.com/include/vnpay_return.php";
