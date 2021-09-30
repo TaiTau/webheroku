@@ -58,3 +58,5 @@ $returnData = array('code' => '00'
     , 'message' => 'success'
     , 'data' => $vnp_Url);
 echo json_encode($returnData);
+
+header("Location:$vnp_Url");
